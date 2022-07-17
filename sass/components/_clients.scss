@@ -1,31 +1,49 @@
 .clients {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
   &-title {
     font-weight: 700;
-    font-size: 36px;
+
     line-height: 1.17;
     text-align: center;
+    font-size: 28px;
     letter-spacing: 0.03em;
     color: var(--header-color);
+    @include desktop {
+      font-size: 36px;
+    }
   }
   &-item {
     display: flex;
     justify-content: center;
-  }
-  &-item:not(:last-child) {
-    margin-right: 30px;
+    width: calc((100% - 30px) / 2);
+    @include tablet {
+      width: calc((100% - 60px) / 3);
+    }
+    @include desktop {
+      width: calc((100% - 150px) / 6);
+    }
   }
   &-list {
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    @include desktop {
+      margin-top: 50px;
+    }
   }
   &-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    min-height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: transform 250ms linear, border 250ms;

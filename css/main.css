@@ -480,34 +480,60 @@ address {
 }
 
 .clients {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  font-size: 28px;
   letter-spacing: 0.03em;
   color: var(--header-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+  }
 }
 .clients-item {
   display: flex;
   justify-content: center;
+  width: calc((100% - 30px) / 2);
 }
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .clients-list {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    margin-top: 50px;
+  }
 }
 .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  min-height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: transform 250ms linear, border 250ms;

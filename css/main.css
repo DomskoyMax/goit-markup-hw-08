@@ -25,6 +25,8 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 button {
@@ -61,11 +63,26 @@ address {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   position: relative;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .header {
@@ -302,23 +319,38 @@ address {
 }
 
 .team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .team-title-heading {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-title-heading {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .team-menu {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .team-menu__title {
   font-weight: 500;
@@ -337,16 +369,29 @@ address {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-.team-menu__team-foto:not(:last-child) {
-  margin-right: 30px;
-}
 .team-menu__team-foto {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .team-menu__team-foto {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-menu__team-foto {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .team-menu__paragraph {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-menu__paragraph {
+    padding-bottom: 30px;
+  }
 }
 .team-menu__soc-list {
   display: flex;

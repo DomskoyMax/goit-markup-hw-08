@@ -25,6 +25,8 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 button {
@@ -33,6 +35,29 @@ button {
 
 a {
   color: currentColor;
+}
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
 }
 
 address {
@@ -59,9 +84,18 @@ address {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   position: relative;
+  @include mobile {
+    max-width: 480px;
+  }
+  @include tablet {
+    max-width: 720px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }

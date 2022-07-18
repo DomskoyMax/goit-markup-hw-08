@@ -895,14 +895,30 @@ address {
 }
 
 .main-content {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .main-content {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .list-btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .list-btn {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-btn {
+    margin-bottom: 56px;
+  }
 }
 
 .portfolio-title-paragraph {
@@ -912,6 +928,17 @@ address {
   padding-right: 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .porfolio-heigth {
+    height: 66px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .porfolio-heigth {
+    height: auto;
+  }
 }
 
 .portfolio-title {
@@ -941,12 +968,21 @@ address {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  gap: 30px;
 }
 
 .list-products {
-  width: calc(33.3333333333% - 30px);
-  margin: 15px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .list-products {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-products {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-top-text {

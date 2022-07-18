@@ -22,14 +22,24 @@
 }
 
 .main-content {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @include desktop {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .list-btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 56px;
+  }
 }
 
 .portfolio-title-paragraph {
@@ -40,7 +50,14 @@
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
-
+.porfolio-heigth {
+  @include tablet {
+    height: 66px;
+  }
+  @include desktop {
+    height: auto;
+  }
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -69,12 +86,19 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  gap: 30px;
 }
+
 .list-products {
-  width: calc(100% / 3 - 30px);
-  margin: 15px;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
+
 .portfolio-top-text {
   position: absolute;
   top: 0;

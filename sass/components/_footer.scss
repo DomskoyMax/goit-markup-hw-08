@@ -2,13 +2,23 @@
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
   &-logo {
     font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #2196f3;
+    @include tablet {
+    }
+    @include desktop {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 
   &-logo-div {
@@ -20,6 +30,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #ffffff;
+    margin-bottom: 30px;
   }
 
   &-mail {
@@ -37,13 +48,18 @@
   }
 
   &-link:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+  @include desktop {
+    &-link:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
   &-wrap {
     flex-grow: 1;
   }
   &-input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -51,6 +67,16 @@
     background-color: transparent;
     padding-left: 16px;
     color: rgba(255, 255, 255, 0.853);
+    @media screen and (max-width: 767px) {
+      & {
+        margin-bottom: 20px;
+      }
+    }
+    @include tablet {
+    }
+    @include desktop {
+      width: 358px;
+    }
   }
 
   &-input-text {
@@ -63,12 +89,22 @@
     margin-bottom: 20px;
   }
   &-input-div {
-    margin-left: 93px;
+    @include tablet {
+    }
+    @include desktop {
+      margin-left: 93px;
+    }
   }
 }
 
 .join {
-  margin-left: 70px;
+  @include tablet {
+    margin-left: 165px;
+  }
+  @include desktop {
+    margin-left: 70px;
+  }
+
   &-title {
     font-weight: 700;
     font-size: 14px;
@@ -80,8 +116,18 @@
   &-soc-list {
     display: flex;
     margin-top: 20px;
+    @media screen and (max-width: 767px) {
+      & {
+        margin-bottom: 60px;
+        justify-content: center;
+      }
+    }
 
-    justify-content: center;
+    @include tablet {
+    }
+    @include desktop {
+      justify-content: center;
+    }
   }
 
   &-soc-item {
@@ -113,9 +159,14 @@
   color: #ffffff;
 }
 .container-join {
-  display: flex;
   align-items: baseline;
   position: relative;
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    display: flex;
+  }
 }
 
 .join-soc-link:hover,
@@ -148,4 +199,10 @@
   display: inline-flex;
   justify-content: center;
   margin-left: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-link-list {
+    margin-bottom: 60px;
+  }
 }

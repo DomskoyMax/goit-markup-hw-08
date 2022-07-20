@@ -22,13 +22,23 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="./index.html"
             >Web<span class="decoratoin-header">Studio</span>
           </a>
+<button type="button" class="menu-button is-open" aria-controls="menu-container"  aria-expanded="false data-menu-button  "  >
+  <svg width="40" height="40" aria-label="переключатель мобильного меню" >
+    <use class="icon-cross" href="./images/icons.svg#icon-close_40px" ></use>
+    <use class="icon-menu" href="./images/icons.svg#icon-menu_40px" ></use>
+  </svg>
+</button>
+<div class="menu-container" id="menu-container" data-menu> 
+  <div class="mob-navigation" ></div>
+  <div class="mob-contacts"></div>
 
+</div>
           <ul class="list header-menu">
             <li class="header-item">
               <a class="link header-link active" href="./index.html">Студия</a>
@@ -62,7 +72,7 @@
           </ul>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <section class="hero">
@@ -640,6 +650,8 @@
         </form>
       </div>
     </div>
+    
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

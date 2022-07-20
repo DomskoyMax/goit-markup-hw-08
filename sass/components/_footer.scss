@@ -67,7 +67,7 @@
     background-color: transparent;
     padding-left: 16px;
     color: rgba(255, 255, 255, 0.853);
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       & {
         margin-bottom: 20px;
       }
@@ -162,7 +162,10 @@
   align-items: baseline;
   position: relative;
   @include tablet {
+    flex-wrap: wrap;
     display: flex;
+    justify-content: space-around;
+    text-align: center;
   }
   @include desktop {
     display: flex;
@@ -201,7 +204,7 @@
   margin-left: 12px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-link-list {
     margin-bottom: 60px;
   }

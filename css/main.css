@@ -701,7 +701,7 @@ address {
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.853);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-input {
     margin-bottom: 20px;
   }
@@ -792,7 +792,10 @@ address {
 }
 @media screen and (min-width: 768px) {
   .container-join {
+    flex-wrap: wrap;
     display: flex;
+    justify-content: space-around;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -833,7 +836,7 @@ address {
   margin-left: 12px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-link-list {
     margin-bottom: 60px;
   }

@@ -2,9 +2,9 @@
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  // @media screen and (max-width: 767px) {
+  //   text-align: center;
+  // }
 
   &-logo {
     font-family: Raleway;
@@ -168,7 +168,7 @@
     text-align: center;
   }
   @include desktop {
-    display: flex;
+    text-align: inherit;
   }
 }
 

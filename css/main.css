@@ -639,11 +639,6 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 767px) {
-  .footer {
-    text-align: center;
-  }
-}
 .footer-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -800,7 +795,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .container-join {
-    display: flex;
+    text-align: inherit;
   }
 }
 

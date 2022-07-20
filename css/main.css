@@ -209,6 +209,11 @@ address {
   display: block;
 }
 
+.mob-navigation .mob-contacts {
+  height: 40px;
+  border: #2196f3;
+}
+
 .header-logo {
   font-family: Raleway;
   font-weight: 700;

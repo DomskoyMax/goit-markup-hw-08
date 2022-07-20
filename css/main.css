@@ -102,7 +102,17 @@ address {
   align-items: center;
 }
 .header-tel-mail {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-tel-mail {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-tel-mail {
+    display: flex;
+  }
 }
 .header-connect {
   margin-left: auto;
@@ -212,6 +222,8 @@ address {
 .mob-navigation .mob-contacts {
   height: 40px;
   border: #2196f3;
+  color: #212121;
+  background-color: #212121;
 }
 
 .header-logo {
@@ -245,6 +257,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 1200px;
     background-color: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-min.jpg);
     margin: 0 auto;

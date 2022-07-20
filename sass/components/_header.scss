@@ -16,7 +16,13 @@
   }
 
   &-tel-mail {
-    display: flex;
+    display: none;
+    @include tablet {
+      display: block;
+    }
+    @include desktop {
+      display: flex;
+    }
   }
 
   &-connect {

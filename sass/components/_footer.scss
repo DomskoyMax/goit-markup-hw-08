@@ -161,11 +161,11 @@
 .container-join {
   align-items: baseline;
   position: relative;
+  text-align: center;
   @include tablet {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
-    text-align: center;
   }
   @include desktop {
     text-align: inherit;

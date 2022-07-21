@@ -93,9 +93,20 @@ address {
 .header-menu {
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+}
 .header-navigation {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header-navigation {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 .header-container {
   display: flex;
@@ -229,15 +240,74 @@ address {
 
 .menu-container {
   display: none;
-  position: absolute;
+  position: fixed;
   text-align: center;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
-  background-color: #212121;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 .menu-container.is-open {
   display: block;
+}
+
+.mob-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu {
+  padding-top: 48px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.mob-soc-link:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-net-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-net-item {
+  display: flex;
+}
+
+.mob-net-link::after {
+  content: "";
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .header-logo {
@@ -247,7 +317,16 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-right: 93px;
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
+  }
 }
 
 .decoratoin-header {
@@ -798,13 +877,13 @@ address {
 .container-join {
   align-items: baseline;
   position: relative;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .container-join {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
-    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {

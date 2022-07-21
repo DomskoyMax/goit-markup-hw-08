@@ -114,8 +114,15 @@ address {
     display: flex;
   }
 }
-.header-connect {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .header-connect {
+    margin-left: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-connect {
+    margin-left: auto;
+  }
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
@@ -138,8 +145,10 @@ address {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.header-tel {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .header-tel {
+    margin-left: 50px;
+  }
 }
 .header-soc-icon {
   margin-right: 10px;
@@ -187,12 +196,23 @@ address {
   fill: #2196f3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-soc-link {
+    padding-bottom: 10px;
+  }
+}
+
 .menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -214,16 +234,10 @@ address {
   top: 100%;
   left: 0;
   width: 100%;
+  background-color: #212121;
 }
 .menu-container.is-open {
   display: block;
-}
-
-.mob-navigation .mob-contacts {
-  height: 40px;
-  border: #2196f3;
-  color: #212121;
-  background-color: #212121;
 }
 
 .header-logo {

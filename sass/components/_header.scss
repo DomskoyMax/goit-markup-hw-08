@@ -26,7 +26,12 @@
   }
 
   &-connect {
-    margin-left: auto;
+    @include tablet {
+      margin-left: 84px;
+    }
+    @include desktop {
+      margin-left: auto;
+    }
   }
 
   &-item:not(:last-child) {
@@ -53,7 +58,9 @@
     position: relative;
   }
   &-tel {
-    margin-left: 50px;
+    @include desktop {
+      margin-left: 50px;
+    }
   }
   &-soc-icon {
     margin-right: 10px;
@@ -109,12 +116,20 @@
     fill: #2196f3;
   }
 }
+.header-soc-link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 10px;
+  }
+}
 .menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .menu-button .icon-cross {
   display: none;
@@ -132,13 +147,14 @@
   top: 100%;
   left: 0;
   width: 100%;
+  background-color: #212121;
   &.is-open {
     display: block;
   }
 }
-.mob-navigation .mob-contacts {
-  height: 40px;
-  border: #2196f3;
-  color: #212121;
-  background-color: #212121;
-}
+// .mob-navigation .mob-contacts {
+//   height: 40px;
+//   border: #2196f3;
+//   color: #212121;
+//   background-color: #212121;
+// }

@@ -26,7 +26,77 @@
         <nav class="header-navigation">
           <a class="header-logo link" href="./index.html"
             >Web<span class="decoratoin-header">Studio</span>
-          </a>
+          </a><button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu-container""
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="перключатель мабильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/icons.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/icons.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container"" data-menu>
+          <div class="mob-navigation">
+            <ul class="list mob-menu">
+              <li class="mob-item">
+                <a class="link mob-link active" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-item">
+                <a class="link mob-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob-item">
+                <a class="link mob-link" href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-contact">
+            <ul class="list mob-tel-mail">
+              <li class="mob-soc-link"><a class="mob-tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+                
+              </li>
+              <li class="mob-soc-link">
+                <a class="mob-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a
+                  >
+              </li>
+            </ul>
+          </div>
+          <div class="mob-soc-net">
+            <ul class="list mob-net-item">
+              <li class="mob-net-link"><a class="link" href="#"
+                >Instagram</a
+              >
+                
+              </li>
+              <li class="mob-net-link">
+                <a class=" link" href="#">Twitter</a
+                  >
+                  <li class="mob-net-link">
+                    <a class=" link" href="#">Facebook</a
+                      >
+              </li>
+              <li class="mob-net-link">
+                <a class=" link" href="#">LinkedIn</a
+                  >
+          </li>
+            </ul>
+
+          </div>
+        </div>
 
           <ul class="list header-menu">
             <li class="header-item">
@@ -563,5 +633,6 @@
         
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -254,59 +254,55 @@ address {
 .menu-container.is-open {
   display: block;
 }
-
-.mob-item {
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+.menu-container .mob-item {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
 }
-
-.mob-item:not(:last-child) {
+.menu-container .mob-item:not(:last-child) {
   margin-bottom: 32px;
 }
-
-.mob-menu {
+.menu-container .mob-menu {
   padding-top: 48px;
   text-align: left;
   padding-left: 40px;
   margin-bottom: 302px;
 }
-
-.mob-soc-link:not(:last-child) {
+.menu-container .mob-soc-link:not(:last-child) {
   margin-bottom: 32px;
 }
-
-.mob-tel {
+.menu-container .mob-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-
-.mob-mail {
+.menu-container .mob-mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
 }
-
-.mob-net-link {
+.menu-container .mob-net-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-
-.mob-net-item {
+.menu-container .mob-net-item {
   display: flex;
 }
-
-.mob-net-link:not(:last-child)::after {
+.menu-container .mob-net-link:not(:last-child)::after {
   content: "";
   width: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);

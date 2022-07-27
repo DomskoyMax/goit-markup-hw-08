@@ -151,11 +151,8 @@
 .menu-container {
   z-index: 100;
   display: none;
-  // position: absolute;
   position: fixed;
   text-align: center;
-  // top: 100%;
-  // left: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -167,71 +164,63 @@
   &.is-open {
     display: block;
   }
-}
-.mob-item {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  // text-align: center;
-  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  .mob-item {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .mob-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mob-menu {
+    padding-top: 48px;
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 302px;
+  }
+  .mob-soc-link {
+  }
+  .mob-soc-link:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mob-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
 
-  color: #212121;
-}
-.mob-item:not(:last-child) {
-  margin-bottom: 32px;
-}
-.mob-menu {
-  padding-top: 48px;
-  text-align: left;
-  padding-left: 40px;
-  margin-bottom: 302px;
-}
-// .mob-contact {
-//   margin-top: 302px;
-// }
-.mob-soc-link {
-}
-.mob-soc-link:not(:last-child) {
-  margin-bottom: 32px;
-}
-.mob-tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
+    letter-spacing: 0.02em;
 
-  letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mob-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
 
-  color: #2196f3;
-}
-.mob-mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-
-  color: #757575;
-}
-.mob-net-link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: #2196f3;
-}
-.mob-net-item {
-  display: flex;
-}
-// .mob-net-link::after {
-//   content: "";
-//   width: 22px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   transform: rotate(90deg);
-// }
-.mob-net-link:not(:last-child)::after {
-  content: "";
-  width: 22px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-  margin-right: 10px;
-  margin-left: 10px;
+    color: #757575;
+  }
+  .mob-net-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mob-net-item {
+    display: flex;
+  }
+  .mob-net-link:not(:last-child)::after {
+    content: "";
+    width: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }

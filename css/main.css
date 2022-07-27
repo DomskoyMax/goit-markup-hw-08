@@ -214,6 +214,7 @@ address {
 }
 
 .menu-button {
+  z-index: 555;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -239,6 +240,7 @@ address {
 }
 
 .menu-container {
+  z-index: 100;
   display: none;
   position: fixed;
   text-align: center;
@@ -269,6 +271,7 @@ address {
   padding-top: 48px;
   text-align: left;
   padding-left: 40px;
+  margin-bottom: 302px;
 }
 
 .mob-soc-link:not(:last-child) {
@@ -303,11 +306,13 @@ address {
   display: flex;
 }
 
-.mob-net-link::after {
+.mob-net-link:not(:last-child)::after {
   content: "";
   width: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .header-logo {

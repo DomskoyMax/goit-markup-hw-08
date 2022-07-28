@@ -255,6 +255,11 @@ address {
   display: block;
 }
 @media screen and (min-width: 768px) {
+  .menu-container.is-open {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
   .menu-container {
     display: none;
   }
@@ -277,6 +282,9 @@ address {
 }
 .menu-container .mob-soc-link:not(:last-child) {
   margin-bottom: 32px;
+}
+.menu-container .mob-tel-mail {
+  margin-bottom: 64px;
 }
 .menu-container .mob-tel {
   font-weight: 500;
@@ -301,6 +309,7 @@ address {
 }
 .menu-container .mob-net-item {
   display: flex;
+  justify-content: center;
 }
 .menu-container .mob-net-link:not(:last-child)::after {
   content: "";

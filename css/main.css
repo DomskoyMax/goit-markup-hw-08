@@ -285,6 +285,12 @@ address {
   padding-left: 40px;
   margin-bottom: 302px;
 }
+.menu-container .mob-item:hover {
+  color: #2196f3;
+}
+.menu-container .mob-item:focus {
+  color: #2196f3;
+}
 .menu-container .mob-soc-link:not(:last-child) {
   margin-bottom: 32px;
 }

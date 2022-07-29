@@ -195,14 +195,14 @@
   }
   .mob-tel-mail {
     margin-bottom: 64px;
+    text-align: left;
+    padding-left: 40px;
   }
   .mob-tel {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
-
     letter-spacing: 0.02em;
-
     color: #2196f3;
   }
   .mob-mail {
@@ -222,7 +222,7 @@
   }
   .mob-net-item {
     display: flex;
-    justify-content: center;
+    padding-left: 40px;
   }
   .mob-net-link:not(:last-child)::after {
     content: "";

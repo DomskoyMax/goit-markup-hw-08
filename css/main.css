@@ -136,11 +136,11 @@ address {
   }
 }
 .header-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 45px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-item:not(:last-child) {
-    margin-right: 45px;
+    margin-right: 50px;
   }
 }
 .header-item {
@@ -295,8 +295,10 @@ address {
   margin-bottom: 32px;
 }
 .menu-container .mob-tel-mail {
+  width: 100%;
   margin-bottom: 64px;
   text-align: left;
+  align-items: end;
   padding-left: 40px;
 }
 .menu-container .mob-tel {

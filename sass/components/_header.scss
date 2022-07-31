@@ -42,9 +42,9 @@
   }
 
   &-item:not(:last-child) {
-    margin-right: 50px;
-    @include tablet {
-      margin-right: 45px;
+    margin-right: 45px;
+    @include desktop {
+      margin-right: 50px;
     }
   }
 
@@ -200,8 +200,10 @@
     margin-bottom: 32px;
   }
   .mob-tel-mail {
+    width: 100%;
     margin-bottom: 64px;
     text-align: left;
+    align-items: end;
     padding-left: 40px;
   }
   .mob-tel {
@@ -219,6 +221,7 @@
 
     color: #757575;
   }
+
   .mob-net-link {
     font-weight: 500;
     font-size: 18px;

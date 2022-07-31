@@ -257,7 +257,9 @@ address {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 .menu-container.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
   .menu-container.is-open {
@@ -283,7 +285,6 @@ address {
   padding-top: 48px;
   text-align: left;
   padding-left: 40px;
-  margin-bottom: 302px;
 }
 .menu-container .mob-item:hover {
   color: #2196f3;
@@ -295,10 +296,8 @@ address {
   margin-bottom: 32px;
 }
 .menu-container .mob-tel-mail {
-  width: 100%;
-  margin-bottom: 64px;
+  margin-top: auto;
   text-align: left;
-  align-items: end;
   padding-left: 40px;
 }
 .menu-container .mob-tel {
